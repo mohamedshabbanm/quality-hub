@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QA Engineer Portfolio | Manual, Automation & API Testing</title>
+<meta name="description" content="Software Tester portfolio: manual testing, test automation and API testing.">
+<meta name="theme-color" content="#0b1020">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav-in">
+    <a href="#home" class="logo"><span class="logo-mark">&lt;/&gt;</span><span>QA<span class="dot">.</span>Portfolio</span></a>
+    <nav class="links" id="links">
+      <a href="#about" data-i18n="nav_about"></a>
+      <a href="#skills" data-i18n="nav_skills"></a>
+      <a href="#process" data-i18n="nav_process"></a>
+      <a href="#projects" data-i18n="nav_projects"></a>
+      <a href="#samples" data-i18n="nav_samples"></a>
+      <a href="#journey" data-i18n="nav_journey"></a>
+      <a href="#contact" data-i18n="nav_contact"></a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="langBtn" aria-label="Language">AR</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Theme">☾</button>
+      <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-text reveal">
+      <span class="badge"><span class="pulse"></span><span data-i18n="badge"></span></span>
+      <h1><span data-i18n="hi"></span> <span class="grad">[YOUR NAME]</span></h1>
+      <h2 class="typing"><span id="typed"></span><span class="caret">|</span></h2>
+      <p class="lead" data-i18n="hero_lead"></p>
+      <div class="cta">
+        <a href="#projects" class="btn primary" data-i18n="cta_projects"></a>
+        <a href="#contact" class="btn ghost" data-i18n="cta_contact"></a>
+        <a href="assets/cv.pdf" class="btn ghost" download data-i18n="cta_cv"></a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM10 9.5h3.8v1.6h.06c.53-1 1.84-2 3.8-2 4.06 0 4.8 2.67 4.8 6.14V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a>
+        <a href="mailto:you@example.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7v.1L12 12.4 19.5 7.1V7z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="terminal reveal" aria-hidden="true">
+      <div class="term-bar"><i></i><i></i><i></i><span>pytest — tests/</span></div>
+      <pre id="term"></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="about_eyebrow"></span><h2 data-i18n="about_title"></h2></div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="big" data-i18n="about_p1"></p>
+        <p class="muted" data-i18n="about_p2"></p>
+      </div>
+      <div class="focus reveal">
+        <div class="focus-item"><span class="ic">🔍</span><div><h4 data-i18n="f1_t"></h4><p data-i18n="f1_d"></p></div></div>
+        <div class="focus-item"><span class="ic">⚙️</span><div><h4 data-i18n="f2_t"></h4><p data-i18n="f2_d"></p></div></div>
+        <div class="focus-item"><span class="ic">🔌</span><div><h4 data-i18n="f3_t"></h4><p data-i18n="f3_d"></p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="skills_eyebrow"></span><h2 data-i18n="skills_title"></h2></div>
+    <div class="cards3">
+      <article class="card reveal">
+        <div class="card-ic">📝</div><h3>Manual Testing</h3>
+        <ul class="check">
+          <li data-i18n="m1"></li><li data-i18n="m2"></li><li data-i18n="m3"></li><li data-i18n="m4"></li><li data-i18n="m5"></li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic">🤖</div><h3>Automation Testing</h3>
+        <ul class="check">
+          <li data-i18n="a1"></li><li data-i18n="a2"></li><li data-i18n="a3"></li><li data-i18n="a4"></li><li data-i18n="a5"></li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic">🔗</div><h3>API Testing</h3>
+        <ul class="check">
+          <li data-i18n="p1"></li><li data-i18n="p2"></li><li data-i18n="p3"></li><li data-i18n="p4"></li><li data-i18n="p5"></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="tools-wrap reveal">
+      <h3 data-i18n="tools_title"></h3>
+      <div class="chips">
+        <span>Jira</span><span>Postman</span><span>Newman</span><span>Selenium</span><span>Playwright</span><span>Python</span><span>pytest</span><span>Allure</span><span>Git &amp; GitHub</span><span>GitHub Actions</span><span>Swagger</span><span>SQL</span><span>Chrome DevTools</span><span>TestRail</span><span>Excel</span><span>Agile / Scrum</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="proc_eyebrow"></span><h2 data-i18n="proc_title"></h2></div>
+    <div class="steps">
+      <div class="step reveal"><b>01</b><h4 data-i18n="s1_t"></h4><p data-i18n="s1_d"></p></div>
+      <div class="step reveal"><b>02</b><h4 data-i18n="s2_t"></h4><p data-i18n="s2_d"></p></div>
+      <div class="step reveal"><b>03</b><h4 data-i18n="s3_t"></h4><p data-i18n="s3_d"></p></div>
+      <div class="step reveal"><b>04</b><h4 data-i18n="s4_t"></h4><p data-i18n="s4_d"></p></div>
+      <div class="step reveal"><b>05</b><h4 data-i18n="s5_t"></h4><p data-i18n="s5_d"></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section alt">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="proj_eyebrow"></span><h2 data-i18n="proj_title"></h2></div>
+    <div class="filters reveal" id="filters">
+      <button class="active" data-filter="all" data-i18n="f_all"></button>
+      <button data-filter="manual">Manual</button>
+      <button data-filter="automation">Automation</button>
+      <button data-filter="api">API</button>
+    </div>
+    <div class="proj-grid" id="projGrid">
+      <!-- EDIT: replace titles, links and descriptions with your real projects -->
+      <article class="proj reveal" data-cat="automation">
+        <div class="proj-top"><span class="tag">Automation</span></div>
+        <h3>Web UI Automation Framework</h3>
+        <p data-i18n="pr1_d"></p>
+        <div class="chips sm"><span>Python</span><span>Selenium</span><span>pytest</span><span>POM</span><span>Allure</span></div>
+        <div class="proj-links"><a href="https://github.com/YOUR-USERNAME/web-ui-automation" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="proj reveal" data-cat="api">
+        <div class="proj-top"><span class="tag api">API</span></div>
+        <h3>REST API Test Suite</h3>
+        <p data-i18n="pr2_d"></p>
+        <div class="chips sm"><span>Postman</span><span>Newman</span><span>requests</span><span>JSON Schema</span></div>
+        <div class="proj-links"><a href="https://github.com/YOUR-USERNAME/api-testing" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="proj reveal" data-cat="manual">
+        <div class="proj-top"><span class="tag manual">Manual</span></div>
+        <h3>Test Documentation Pack</h3>
+        <p data-i18n="pr3_d"></p>
+        <div class="chips sm"><span>Test Plan</span><span>Test Cases</span><span>Bug Reports</span><span>Jira</span></div>
+        <div class="proj-links"><a href="https://github.com/YOUR-USERNAME/manual-testing-docs" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="proj reveal" data-cat="automation">
+        <div class="proj-top"><span class="tag">Automation</span></div>
+        <h3>CI Pipeline for Tests</h3>
+        <p data-i18n="pr4_d"></p>
+        <div class="chips sm"><span>GitHub Actions</span><span>pytest</span><span>Allure</span></div>
+        <div class="proj-links"><a href="https://github.com/YOUR-USERNAME/ci-test-pipeline" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLES -->
+<section id="samples" class="section">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="smp_eyebrow"></span><h2 data-i18n="smp_title"></h2></div>
+    <div class="code-box reveal">
+      <div class="code-tabs" id="codeTabs">
+        <button class="active" data-tab="tc">Test Case</button>
+        <button data-tab="bug">Bug Report</button>
+        <button data-tab="ui">Selenium + pytest</button>
+        <button data-tab="api">API Test</button>
+      </div>
+      <button class="copy" id="copyBtn" data-i18n="copy"></button>
+      <pre class="code active" id="tab-tc">ID:        TC-LOGIN-003
+Title:     Login fails with a wrong password
+Priority:  High              Type: Negative
+Pre-cond:  User account exists
+
+Steps:
+  1. Open /login
+  2. Enter a valid email
+  3. Enter a wrong password
+  4. Click "Login"
+
+Expected:  Error "Invalid credentials" is shown
+           and the user stays on /login
+Status:    Passed</pre>
+      <pre class="code" id="tab-bug">Bug ID:    BUG-102                Severity: Major
+Title:     Cart total not updated after removing an item
+Env:       Chrome 130 / Windows 11 / Build 2.4.1
+
+Steps to reproduce:
+  1. Add two products to the cart
+  2. Remove one product
+
+Actual:    Total still shows the price of both items
+Expected:  Total equals the price of the remaining item
+Attachments: screen-recording.mp4, console-log.txt</pre>
+      <pre class="code" id="tab-ui"># tests/test_login.py
+import pytest
+from pages.login_page import LoginPage
+
+@pytest.mark.parametrize("email,password,error", [
+    ("user@test.com", "wrong", "Invalid credentials"),
+    ("",              "123456", "Email is required"),
+])
+def test_login_negative(driver, email, password, error):
+    page = LoginPage(driver).open()
+    page.login(email, password)
+    assert error in page.error_message()</pre>
+      <pre class="code" id="tab-api"># tests/test_users_api.py
+import requests
+
+BASE = "https://reqres.in/api"
+
+def test_create_user_returns_201():
+    payload = {"name": "Ali", "job": "QA Engineer"}
+    r = requests.post(f"{BASE}/users", json=payload, timeout=10)
+
+    assert r.status_code == 201
+    body = r.json()
+    assert body["name"] == payload["name"]
+    assert "id" in body</pre>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="section alt">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="jr_eyebrow"></span><h2 data-i18n="jr_title"></h2></div>
+    <div class="timeline">
+      <!-- EDIT: put your real education, courses, certificates and experience -->
+      <div class="t-item reveal"><span class="t-dot"></span><small>20XX – 20XX</small><h4 data-i18n="j1_t"></h4><p data-i18n="j1_d"></p></div>
+      <div class="t-item reveal"><span class="t-dot"></span><small>20XX</small><h4 data-i18n="j2_t"></h4><p data-i18n="j2_d"></p></div>
+      <div class="t-item reveal"><span class="t-dot"></span><small>20XX</small><h4 data-i18n="j3_t"></h4><p data-i18n="j3_d"></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="sec-head reveal"><span class="eyebrow" data-i18n="ct_eyebrow"></span><h2 data-i18n="ct_title"></h2></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="big" data-i18n="ct_p"></p>
+        <ul class="contact-list">
+          <li>📧 <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>💼 <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li>🐙 <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a></li>
+          <li>📍 Egypt</li>
+        </ul>
+      </div>
+      <form class="form reveal" id="form" novalidate>
+        <label><span data-i18n="fm_name"></span><input name="name" required></label>
+        <label><span data-i18n="fm_email"></span><input name="email" type="email" required></label>
+        <label><span data-i18n="fm_msg"></span><textarea name="msg" rows="5" required></textarea></label>
+        <button class="btn primary" type="submit" data-i18n="fm_send"></button>
+        <p class="note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container"><span>© <span id="year"></span> [YOUR NAME]</span><span data-i18n="foot"></span></div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
