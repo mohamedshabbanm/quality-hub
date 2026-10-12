@@ -1,287 +1,435 @@
+
 <!doctype html>
 <html lang="en" dir="ltr" data-theme="dark">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QA Engineer Portfolio | Manual, Automation & API Testing</title>
-<meta name="description" content="Software Tester portfolio: manual testing, test automation and API testing.">
-<meta name="theme-color" content="#0b1020">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Mohamed Shabban — Software Tester focused on manual testing, test case design, clear bug reports, and quality assurance.">
+  <title>Mohamed Shabban | Software Tester</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="bg-glow" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-<header class="nav" id="nav">
-  <div class="container nav-in">
-    <a href="#home" class="logo"><span class="logo-mark">&lt;/&gt;</span><span>QA<span class="dot">.</span>Portfolio</span></a>
-    <nav class="links" id="links">
-      <a href="#about" data-i18n="nav_about"></a>
-      <a href="#skills" data-i18n="nav_skills"></a>
-      <a href="#process" data-i18n="nav_process"></a>
-      <a href="#projects" data-i18n="nav_projects"></a>
-      <a href="#samples" data-i18n="nav_samples"></a>
-      <a href="#journey" data-i18n="nav_journey"></a>
-      <a href="#contact" data-i18n="nav_contact"></a>
-    </nav>
-    <div class="tools">
-      <button class="icon-btn" id="langBtn" aria-label="Language">AR</button>
-      <button class="icon-btn" id="themeBtn" aria-label="Theme">☾</button>
-      <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
-    </div>
-  </div>
-</header>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Mohamed Shabban home">
+        <span class="brand-mark">MS</span>
+        <span>Mohamed<span class="accent">.</span></span>
+      </a>
 
-<main>
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div class="hero-text reveal">
-      <span class="badge"><span class="pulse"></span><span data-i18n="badge"></span></span>
-      <h1><span data-i18n="hi"></span> <span class="grad">[YOUR NAME]</span></h1>
-      <h2 class="typing"><span id="typed"></span><span class="caret">|</span></h2>
-      <p class="lead" data-i18n="hero_lead"></p>
-      <div class="cta">
-        <a href="#projects" class="btn primary" data-i18n="cta_projects"></a>
-        <a href="#contact" class="btn ghost" data-i18n="cta_contact"></a>
-        <a href="assets/cv.pdf" class="btn ghost" download data-i18n="cta_cv"></a>
-      </div>
-      <div class="socials">
-        <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM10 9.5h3.8v1.6h.06c.53-1 1.84-2 3.8-2 4.06 0 4.8 2.67 4.8 6.14V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a>
-        <a href="mailto:you@example.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7v.1L12 12.4 19.5 7.1V7z"/></svg></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about" data-en="About" data-ar="نبذة عني">About</a>
+        <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
+        <a href="#work" data-en="Work Samples" data-ar="نماذج العمل">Work Samples</a>
+        <a href="#process" data-en="My Process" data-ar="منهجية العمل">My Process</a>
+        <a href="#contact" data-en="Contact" data-ar="تواصل معي">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-button" id="languageToggle" type="button" aria-label="Switch language">AR</button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme">☼</button>
+        <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Open menu">☰</button>
       </div>
     </div>
+  </header>
 
-    <div class="terminal reveal" aria-hidden="true">
-      <div class="term-bar"><i></i><i></i><i></i><span>pytest — tests/</span></div>
-      <pre id="term"></pre>
-    </div>
-  </div>
-</section>
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="availability">
+            <span class="status-dot"></span>
+            <span data-en="Software Testing & Quality Assurance" data-ar="اختبار البرمجيات وضمان الجودة">Software Testing &amp; Quality Assurance</span>
+          </div>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow" data-i18n="about_eyebrow"></span><h2 data-i18n="about_title"></h2></div>
-    <div class="about-grid">
-      <div class="reveal">
-        <p class="big" data-i18n="about_p1"></p>
-        <p class="muted" data-i18n="about_p2"></p>
+          <p class="eyebrow" data-en="HELLO, I'M" data-ar="أهلًا، أنا">HELLO, I'M</p>
+
+          <h1>Mohamed<br><span class="gradient-text">Shabban</span></h1>
+          <h2 data-en="Software Tester" data-ar="مختبر برمجيات">Software Tester</h2>
+
+          <p class="hero-description"
+             data-en="I help improve software quality through structured manual testing, thoughtful test cases, and clear, actionable bug reports."
+             data-ar="أساعد على تحسين جودة البرمجيات من خلال الاختبار اليدوي المنظم، وتصميم حالات اختبار واضحة، وكتابة تقارير أخطاء قابلة للتنفيذ.">
+            I help improve software quality through structured manual testing, thoughtful test cases, and clear, actionable bug reports.
+          </p>
+
+          <div class="hero-tags">
+            <span>Manual Testing</span>
+            <span>Test Case Design</span>
+            <span>Bug Reporting</span>
+            <span>Regression Testing</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work"
+               data-en="Explore Work Samples ↘" data-ar="شاهد نماذج العمل ↙">Explore Work Samples ↘</a>
+            <a class="button button-secondary" href="CV.pdf" target="_blank" rel="noopener"
+               data-en="View CV ↗" data-ar="عرض السيرة الذاتية ↗">View CV ↗</a>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:mohamedworkoff@gmail.com" aria-label="Email Mohamed">✉ <span>Email</span></a>
+            <a href="https://www.linkedin.com/in/mohamed-shabban-b28174344"
+               target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">in <span>LinkedIn</span></a>
+            <a href="tel:+201069905291" aria-label="Call Mohamed">☎ <span>Phone</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="visual-top">
+            <span class="window-dots"><i></i><i></i><i></i></span>
+            <span>quality_check.exe</span>
+            <span class="live-label">READY</span>
+          </div>
+
+          <div class="visual-body">
+            <div class="code-line"><span class="line-no">01</span><span class="code-purple">const</span> tester = <span class="code-green">"Mohamed Shabban"</span>;</div>
+            <div class="code-line"><span class="line-no">02</span><span class="code-purple">const</span> focus = [</div>
+            <div class="code-line indent"><span class="line-no">03</span><span class="code-green">"Find defects"</span>,</div>
+            <div class="code-line indent"><span class="line-no">04</span><span class="code-green">"Validate requirements"</span>,</div>
+            <div class="code-line indent"><span class="line-no">05</span><span class="code-green">"Protect user experience"</span></div>
+            <div class="code-line"><span class="line-no">06</span>];</div>
+
+            <div class="terminal-divider"></div>
+
+            <div class="terminal-result">
+              <span class="check-icon">✓</span>
+              <div>
+                <strong data-en="Quality starts with curiosity." data-ar="الجودة تبدأ بالفضول.">Quality starts with curiosity.</strong>
+                <small data-en="Test carefully. Report clearly. Improve continuously."
+                       data-ar="اختبر بدقة، واكتب تقارير واضحة، وحسّن باستمرار.">Test carefully. Report clearly. Improve continuously.</small>
+              </div>
+            </div>
+
+            <div class="progress-wrap">
+              <div>
+                <span data-en="Testing mindset" data-ar="منهجية الاختبار">Testing mindset</span>
+                <b>100%</b>
+              </div>
+              <div class="progress"><span></span></div>
+            </div>
+          </div>
+
+          <div class="floating-note">
+            <span class="note-icon">⌕</span>
+            <div><b>Bug found?</b><small>Document · Reproduce · Report</small></div>
+          </div>
+        </div>
       </div>
-      <div class="focus reveal">
-        <div class="focus-item"><span class="ic">🔍</span><div><h4 data-i18n="f1_t"></h4><p data-i18n="f1_d"></p></div></div>
-        <div class="focus-item"><span class="ic">⚙️</span><div><h4 data-i18n="f2_t"></h4><p data-i18n="f2_d"></p></div></div>
-        <div class="focus-item"><span class="ic">🔌</span><div><h4 data-i18n="f3_t"></h4><p data-i18n="f3_d"></p></div></div>
+
+      <div class="container stats-row">
+        <div><strong>01</strong><span data-en="Understand requirements" data-ar="فهم المتطلبات">Understand requirements</span></div>
+        <div><strong>02</strong><span data-en="Design test scenarios" data-ar="تصميم سيناريوهات الاختبار">Design test scenarios</span></div>
+        <div><strong>03</strong><span data-en="Report with clarity" data-ar="توثيق النتائج بوضوح">Report with clarity</span></div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section alt">
-  <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow" data-i18n="skills_eyebrow"></span><h2 data-i18n="skills_title"></h2></div>
-    <div class="cards3">
-      <article class="card reveal">
-        <div class="card-ic">📝</div><h3>Manual Testing</h3>
-        <ul class="check">
-          <li data-i18n="m1"></li><li data-i18n="m2"></li><li data-i18n="m3"></li><li data-i18n="m4"></li><li data-i18n="m5"></li>
-        </ul>
-      </article>
-      <article class="card reveal">
-        <div class="card-ic">🤖</div><h3>Automation Testing</h3>
-        <ul class="check">
-          <li data-i18n="a1"></li><li data-i18n="a2"></li><li data-i18n="a3"></li><li data-i18n="a4"></li><li data-i18n="a5"></li>
-        </ul>
-      </article>
-      <article class="card reveal">
-        <div class="card-ic">🔗</div><h3>API Testing</h3>
-        <ul class="check">
-          <li data-i18n="p1"></li><li data-i18n="p2"></li><li data-i18n="p3"></li><li data-i18n="p4"></li><li data-i18n="p5"></li>
-        </ul>
-      </article>
-    </div>
+    <section class="section-shell section-muted" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="A LITTLE ABOUT ME" data-ar="نبذة مختصرة">A LITTLE ABOUT ME</p>
+          <h2 data-en="Quality is not an accident." data-ar="الجودة لا تأتي بالصدفة.">Quality is not an accident.</h2>
+        </div>
 
-    <div class="tools-wrap reveal">
-      <h3 data-i18n="tools_title"></h3>
-      <div class="chips">
-        <span>Jira</span><span>Postman</span><span>Newman</span><span>Selenium</span><span>Playwright</span><span>Python</span><span>pytest</span><span>Allure</span><span>Git &amp; GitHub</span><span>GitHub Actions</span><span>Swagger</span><span>SQL</span><span>Chrome DevTools</span><span>TestRail</span><span>Excel</span><span>Agile / Scrum</span>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="large-copy"
+               data-en="I'm Mohamed Shabban, a software testing enthusiast focused on checking how applications behave, identifying defects, and helping teams deliver a more reliable user experience."
+               data-ar="أنا محمد شعبان، مهتم باختبار البرمجيات، والتحقق من سلوك التطبيقات، واكتشاف الأخطاء، ومساعدة الفرق على تقديم تجربة استخدام أكثر موثوقية.">
+              I'm Mohamed Shabban, a software testing enthusiast focused on checking how applications behave, identifying defects, and helping teams deliver a more reliable user experience.
+            </p>
+            <p class="muted-copy"
+               data-en="My approach is practical and organized: understand the requirement, cover positive and negative scenarios, record reproducible evidence, and communicate findings in a way developers can act on."
+               data-ar="منهجي عملي ومنظم: أفهم المتطلبات، وأغطي السيناريوهات الصحيحة والخاطئة، وأسجل خطوات إعادة ظهور المشكلة، وأعرض النتائج بطريقة تساعد المطور على التعامل معها.">
+              My approach is practical and organized: understand the requirement, cover positive and negative scenarios, record reproducible evidence, and communicate findings in a way developers can act on.
+            </p>
+          </div>
+
+          <div class="principles reveal">
+            <article class="principle-card">
+              <span class="principle-number">01</span>
+              <div>
+                <h3 data-en="Think like a user" data-ar="فكّر كمستخدم">Think like a user</h3>
+                <p data-en="Check realistic journeys, edge cases, and usability issues."
+                   data-ar="اختبر الاستخدام الواقعي والحالات الطرفية ومشكلات سهولة الاستخدام.">Check realistic journeys, edge cases, and usability issues.</p>
+              </div>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number">02</span>
+              <div>
+                <h3 data-en="Be precise" data-ar="كن دقيقًا">Be precise</h3>
+                <p data-en="Write clear steps, expected results, actual results, and severity."
+                   data-ar="اكتب خطوات واضحة والنتيجة المتوقعة والفعلية ودرجة الخطورة.">Write clear steps, expected results, actual results, and severity.</p>
+              </div>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number">03</span>
+              <div>
+                <h3 data-en="Keep learning" data-ar="تعلّم باستمرار">Keep learning</h3>
+                <p data-en="Improve testing techniques and documentation with every project."
+                   data-ar="طوّر أساليب الاختبار والتوثيق مع كل مشروع.">Improve testing techniques and documentation with every project.</p>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- PROCESS -->
-<section id="process" class="section">
-  <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow" data-i18n="proc_eyebrow"></span><h2 data-i18n="proc_title"></h2></div>
-    <div class="steps">
-      <div class="step reveal"><b>01</b><h4 data-i18n="s1_t"></h4><p data-i18n="s1_d"></p></div>
-      <div class="step reveal"><b>02</b><h4 data-i18n="s2_t"></h4><p data-i18n="s2_d"></p></div>
-      <div class="step reveal"><b>03</b><h4 data-i18n="s3_t"></h4><p data-i18n="s3_d"></p></div>
-      <div class="step reveal"><b>04</b><h4 data-i18n="s4_t"></h4><p data-i18n="s4_d"></p></div>
-      <div class="step reveal"><b>05</b><h4 data-i18n="s5_t"></h4><p data-i18n="s5_d"></p></div>
-    </div>
-  </div>
-</section>
+    <section class="section-shell" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="WHAT I FOCUS ON" data-ar="مجالات التركيز">WHAT I FOCUS ON</p>
+          <h2 data-en="Software testing skills" data-ar="مهارات اختبار البرمجيات">Software testing skills</h2>
+          <p class="section-intro"
+             data-en="A practical foundation for checking features, documenting defects, and supporting product quality."
+             data-ar="أساس عملي لاختبار الوظائف وتوثيق الأخطاء ودعم جودة المنتج.">
+            A practical foundation for checking features, documenting defects, and supporting product quality.
+          </p>
+        </div>
 
-<!-- PROJECTS -->
-<section id="projects" class="section alt">
-  <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow" data-i18n="proj_eyebrow"></span><h2 data-i18n="proj_title"></h2></div>
-    <div class="filters reveal" id="filters">
-      <button class="active" data-filter="all" data-i18n="f_all"></button>
-      <button data-filter="manual">Manual</button>
-      <button data-filter="automation">Automation</button>
-      <button data-filter="api">API</button>
-    </div>
-    <div class="proj-grid" id="projGrid">
-      <!-- EDIT: replace titles, links and descriptions with your real projects -->
-      <article class="proj reveal" data-cat="automation">
-        <div class="proj-top"><span class="tag">Automation</span></div>
-        <h3>Web UI Automation Framework</h3>
-        <p data-i18n="pr1_d"></p>
-        <div class="chips sm"><span>Python</span><span>Selenium</span><span>pytest</span><span>POM</span><span>Allure</span></div>
-        <div class="proj-links"><a href="https://github.com/YOUR-USERNAME/web-ui-automation" target="_blank" rel="noopener">GitHub ↗</a></div>
-      </article>
-      <article class="proj reveal" data-cat="api">
-        <div class="proj-top"><span class="tag api">API</span></div>
-        <h3>REST API Test Suite</h3>
-        <p data-i18n="pr2_d"></p>
-        <div class="chips sm"><span>Postman</span><span>Newman</span><span>requests</span><span>JSON Schema</span></div>
-        <div class="proj-links"><a href="https://github.com/YOUR-USERNAME/api-testing" target="_blank" rel="noopener">GitHub ↗</a></div>
-      </article>
-      <article class="proj reveal" data-cat="manual">
-        <div class="proj-top"><span class="tag manual">Manual</span></div>
-        <h3>Test Documentation Pack</h3>
-        <p data-i18n="pr3_d"></p>
-        <div class="chips sm"><span>Test Plan</span><span>Test Cases</span><span>Bug Reports</span><span>Jira</span></div>
-        <div class="proj-links"><a href="https://github.com/YOUR-USERNAME/manual-testing-docs" target="_blank" rel="noopener">GitHub ↗</a></div>
-      </article>
-      <article class="proj reveal" data-cat="automation">
-        <div class="proj-top"><span class="tag">Automation</span></div>
-        <h3>CI Pipeline for Tests</h3>
-        <p data-i18n="pr4_d"></p>
-        <div class="chips sm"><span>GitHub Actions</span><span>pytest</span><span>Allure</span></div>
-        <div class="proj-links"><a href="https://github.com/YOUR-USERNAME/ci-test-pipeline" target="_blank" rel="noopener">GitHub ↗</a></div>
-      </article>
-    </div>
-  </div>
-</section>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">⌕</div>
+            <p class="card-kicker">01 / TEST</p>
+            <h3>Manual Testing</h3>
+            <ul>
+              <li>Functional testing</li>
+              <li>Regression testing</li>
+              <li>Smoke & sanity testing</li>
+              <li>Positive & negative scenarios</li>
+              <li>Exploratory testing</li>
+            </ul>
+          </article>
 
-<!-- SAMPLES -->
-<section id="samples" class="section">
-  <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow" data-i18n="smp_eyebrow"></span><h2 data-i18n="smp_title"></h2></div>
-    <div class="code-box reveal">
-      <div class="code-tabs" id="codeTabs">
-        <button class="active" data-tab="tc">Test Case</button>
-        <button data-tab="bug">Bug Report</button>
-        <button data-tab="ui">Selenium + pytest</button>
-        <button data-tab="api">API Test</button>
+          <article class="skill-card reveal">
+            <div class="skill-icon">▤</div>
+            <p class="card-kicker">02 / DESIGN</p>
+            <h3>Test Documentation</h3>
+            <ul>
+              <li>Test scenarios and test cases</li>
+              <li>Preconditions and test steps</li>
+              <li>Expected vs. actual results</li>
+              <li>Test data preparation</li>
+              <li>Test plan fundamentals</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">⚑</div>
+            <p class="card-kicker">03 / REPORT</p>
+            <h3>Defect Reporting</h3>
+            <ul>
+              <li>Clear bug summaries</li>
+              <li>Steps to reproduce</li>
+              <li>Severity and priority</li>
+              <li>Screenshots and evidence</li>
+              <li>Retesting after fixes</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="tool-panel reveal">
+          <div>
+            <p class="eyebrow" data-en="TOOLS & WORKFLOW" data-ar="الأدوات وسير العمل">TOOLS &amp; WORKFLOW</p>
+            <h3 data-en="Tools I use or practice with" data-ar="أدوات أستخدمها أو أتدرّب عليها">Tools I use or practice with</h3>
+          </div>
+          <div class="tool-chips">
+            <span>Jira</span><span>Postman</span><span>Excel</span>
+            <span>Chrome DevTools</span><span>GitHub</span><span>Test Cases</span>
+            <span>Bug Reports</span><span>Agile / Scrum basics</span>
+          </div>
+          <p class="tool-note" data-en="Tools and scope can be adjusted to the project requirements."
+             data-ar="يمكن تحديد الأدوات ونطاق العمل وفقًا لمتطلبات المشروع.">
+            Tools and scope can be adjusted to the project requirements.
+          </p>
+        </div>
       </div>
-      <button class="copy" id="copyBtn" data-i18n="copy"></button>
-      <pre class="code active" id="tab-tc">ID:        TC-LOGIN-003
-Title:     Login fails with a wrong password
-Priority:  High              Type: Negative
-Pre-cond:  User account exists
+    </section>
 
-Steps:
-  1. Open /login
-  2. Enter a valid email
-  3. Enter a wrong password
-  4. Click "Login"
+    <section class="section-shell section-muted" id="work">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="SELECTED EXAMPLES" data-ar="نماذج مختارة">SELECTED EXAMPLES</p>
+          <h2 data-en="Work samples" data-ar="نماذج من العمل">Work samples</h2>
+          <p class="section-intro"
+             data-en="Examples of the way I structure test cases and communicate defects. These are illustrative samples, not claims of client work."
+             data-ar="أمثلة توضيحية لطريقة تنظيم حالات الاختبار وتوثيق الأخطاء، وليست ادعاءً بأنها أعمال منفذة لعملاء.">
+            Examples of the way I structure test cases and communicate defects. These are illustrative samples, not claims of client work.
+          </p>
+        </div>
 
-Expected:  Error "Invalid credentials" is shown
-           and the user stays on /login
-Status:    Passed</pre>
-      <pre class="code" id="tab-bug">Bug ID:    BUG-102                Severity: Major
-Title:     Cart total not updated after removing an item
-Env:       Chrome 130 / Windows 11 / Build 2.4.1
+        <div class="samples-grid">
+          <article class="sample-card reveal">
+            <div class="sample-meta"><span>TEST CASE</span><span class="sample-id">TC-LOGIN-01</span></div>
+            <h3 data-en="Login with invalid password" data-ar="تسجيل الدخول بكلمة مرور خاطئة">Login with invalid password</h3>
+            <div class="sample-field">
+              <b data-en="Precondition" data-ar="الشروط المسبقة">Precondition</b>
+              <p data-en="A registered user account exists." data-ar="وجود حساب مستخدم مسجل.">A registered user account exists.</p>
+            </div>
+            <div class="sample-field">
+              <b data-en="Steps" data-ar="الخطوات">Steps</b>
+              <ol>
+                <li data-en="Open the login page." data-ar="افتح صفحة تسجيل الدخول.">Open the login page.</li>
+                <li data-en="Enter a valid email and an incorrect password." data-ar="أدخل بريدًا صحيحًا وكلمة مرور غير صحيحة.">Enter a valid email and an incorrect password.</li>
+                <li data-en="Select Login." data-ar="اضغط على تسجيل الدخول.">Select Login.</li>
+              </ol>
+            </div>
+            <div class="expected">
+              <b data-en="Expected result" data-ar="النتيجة المتوقعة">Expected result</b>
+              <p data-en="Access is denied and a helpful error message appears."
+                 data-ar="يُرفض الدخول وتظهر رسالة خطأ واضحة.">Access is denied and a helpful error message appears.</p>
+            </div>
+          </article>
 
-Steps to reproduce:
-  1. Add two products to the cart
-  2. Remove one product
+          <article class="sample-card reveal">
+            <div class="sample-meta"><span>BUG REPORT</span><span class="sample-id">BUG-CART-01</span></div>
+            <h3 data-en="Cart total does not update" data-ar="إجمالي السلة لا يتحدث">Cart total does not update</h3>
+            <div class="sample-field">
+              <b data-en="Steps to reproduce" data-ar="خطوات إعادة المشكلة">Steps to reproduce</b>
+              <ol>
+                <li data-en="Add two products to the cart." data-ar="أضف منتجين إلى السلة.">Add two products to the cart.</li>
+                <li data-en="Remove one product." data-ar="احذف أحد المنتجين.">Remove one product.</li>
+              </ol>
+            </div>
+            <div class="sample-field">
+              <b data-en="Actual result" data-ar="النتيجة الفعلية">Actual result</b>
+              <p data-en="The total still includes the removed product."
+                 data-ar="يظل الإجمالي محتسبًا سعر المنتج المحذوف.">The total still includes the removed product.</p>
+            </div>
+            <div class="expected">
+              <b data-en="Expected result" data-ar="النتيجة المتوقعة">Expected result</b>
+              <p data-en="The total reflects only the products remaining in the cart."
+                 data-ar="يعكس الإجمالي المنتجات المتبقية فقط في السلة.">The total reflects only the products remaining in the cart.</p>
+            </div>
+          </article>
 
-Actual:    Total still shows the price of both items
-Expected:  Total equals the price of the remaining item
-Attachments: screen-recording.mp4, console-log.txt</pre>
-      <pre class="code" id="tab-ui"># tests/test_login.py
-import pytest
-from pages.login_page import LoginPage
-
-@pytest.mark.parametrize("email,password,error", [
-    ("user@test.com", "wrong", "Invalid credentials"),
-    ("",              "123456", "Email is required"),
-])
-def test_login_negative(driver, email, password, error):
-    page = LoginPage(driver).open()
-    page.login(email, password)
-    assert error in page.error_message()</pre>
-      <pre class="code" id="tab-api"># tests/test_users_api.py
-import requests
-
-BASE = "https://reqres.in/api"
-
-def test_create_user_returns_201():
-    payload = {"name": "Ali", "job": "QA Engineer"}
-    r = requests.post(f"{BASE}/users", json=payload, timeout=10)
-
-    assert r.status_code == 201
-    body = r.json()
-    assert body["name"] == payload["name"]
-    assert "id" in body</pre>
-    </div>
-  </div>
-</section>
-
-<!-- JOURNEY -->
-<section id="journey" class="section alt">
-  <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow" data-i18n="jr_eyebrow"></span><h2 data-i18n="jr_title"></h2></div>
-    <div class="timeline">
-      <!-- EDIT: put your real education, courses, certificates and experience -->
-      <div class="t-item reveal"><span class="t-dot"></span><small>20XX – 20XX</small><h4 data-i18n="j1_t"></h4><p data-i18n="j1_d"></p></div>
-      <div class="t-item reveal"><span class="t-dot"></span><small>20XX</small><h4 data-i18n="j2_t"></h4><p data-i18n="j2_d"></p></div>
-      <div class="t-item reveal"><span class="t-dot"></span><small>20XX</small><h4 data-i18n="j3_t"></h4><p data-i18n="j3_d"></p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow" data-i18n="ct_eyebrow"></span><h2 data-i18n="ct_title"></h2></div>
-    <div class="contact-grid">
-      <div class="reveal">
-        <p class="big" data-i18n="ct_p"></p>
-        <ul class="contact-list">
-          <li>📧 <a href="mailto:you@example.com">you@example.com</a></li>
-          <li>💼 <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li>🐙 <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a></li>
-          <li>📍 Egypt</li>
-        </ul>
+          <article class="sample-card reveal">
+            <div class="sample-meta"><span>CHECKLIST</span><span class="sample-id">WEB-FORM-01</span></div>
+            <h3 data-en="Form validation checklist" data-ar="قائمة فحص التحقق من النماذج">Form validation checklist</h3>
+            <ul class="checklist">
+              <li data-en="Required fields reject empty input." data-ar="الحقول الإلزامية ترفض الإدخال الفارغ.">Required fields reject empty input.</li>
+              <li data-en="Email format is validated." data-ar="يتم التحقق من تنسيق البريد الإلكتروني.">Email format is validated.</li>
+              <li data-en="Invalid data shows clear feedback." data-ar="تظهر رسالة واضحة عند إدخال بيانات غير صحيحة.">Invalid data shows clear feedback.</li>
+              <li data-en="Valid submission completes successfully." data-ar="يتم إرسال البيانات الصحيحة بنجاح.">Valid submission completes successfully.</li>
+              <li data-en="Errors do not erase valid user input." data-ar="لا تؤدي الأخطاء إلى مسح المدخلات الصحيحة.">Errors do not erase valid user input.</li>
+            </ul>
+          </article>
+        </div>
       </div>
-      <form class="form reveal" id="form" novalidate>
-        <label><span data-i18n="fm_name"></span><input name="name" required></label>
-        <label><span data-i18n="fm_email"></span><input name="email" type="email" required></label>
-        <label><span data-i18n="fm_msg"></span><textarea name="msg" rows="5" required></textarea></label>
-        <button class="btn primary" type="submit" data-i18n="fm_send"></button>
-        <p class="note" id="formNote"></p>
-      </form>
+    </section>
+
+    <section class="section-shell" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-en="HOW I WORK" data-ar="كيف أعمل">HOW I WORK</p>
+          <h2 data-en="A clear testing process" data-ar="خطوات اختبار واضحة">A clear testing process</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span>01</span>
+            <h3 data-en="Understand" data-ar="الفهم">Understand</h3>
+            <p data-en="Review requirements, user flows, and acceptance criteria."
+               data-ar="مراجعة المتطلبات ومسارات المستخدم ومعايير القبول.">Review requirements, user flows, and acceptance criteria.</p>
+          </article>
+          <article class="process-step reveal">
+            <span>02</span>
+            <h3 data-en="Plan" data-ar="التخطيط">Plan</h3>
+            <p data-en="Identify coverage, test data, risks, and priority scenarios."
+               data-ar="تحديد نطاق التغطية وبيانات الاختبار والمخاطر والسيناريوهات ذات الأولوية.">Identify coverage, test data, risks, and priority scenarios.</p>
+          </article>
+          <article class="process-step reveal">
+            <span>03</span>
+            <h3 data-en="Execute" data-ar="التنفيذ">Execute</h3>
+            <p data-en="Run test cases and explore important user journeys."
+               data-ar="تنفيذ حالات الاختبار واستكشاف مسارات الاستخدام المهمة.">Run test cases and explore important user journeys.</p>
+          </article>
+          <article class="process-step reveal">
+            <span>04</span>
+            <h3 data-en="Report" data-ar="التوثيق">Report</h3>
+            <p data-en="Document reproducible defects with clear evidence."
+               data-ar="توثيق الأخطاء القابلة لإعادة الظهور مع أدلة واضحة.">Document reproducible defects with clear evidence.</p>
+          </article>
+          <article class="process-step reveal">
+            <span>05</span>
+            <h3 data-en="Retest" data-ar="إعادة الاختبار">Retest</h3>
+            <p data-en="Verify fixes and check for regressions where relevant."
+               data-ar="التحقق من الإصلاحات وفحص الآثار الجانبية عند الحاجة.">Verify fixes and check for regressions where relevant.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell section-muted" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow" data-en="LET'S TALK" data-ar="لنتواصل">LET'S TALK</p>
+          <h2 data-en="Need a careful pair of eyes on your software?"
+              data-ar="هل تحتاج إلى اختبار دقيق لبرنامجك؟">Need a careful pair of eyes on your software?</h2>
+          <p class="muted-copy"
+             data-en="Tell me about your application, testing goals, and expected deliverables. I’ll be happy to discuss a suitable scope."
+             data-ar="أخبرني عن التطبيق وأهداف الاختبار والمخرجات المطلوبة، وسيسعدني مناقشة نطاق عمل مناسب.">
+            Tell me about your application, testing goals, and expected deliverables. I’ll be happy to discuss a suitable scope.
+          </p>
+
+          <div class="contact-details">
+            <a href="mailto:mohamedworkoff@gmail.com">
+              <span class="contact-symbol">✉</span>
+              <span><small>Email</small><b>mohamedworkoff@gmail.com</b></span>
+            </a>
+            <a href="tel:+201069905291">
+              <span class="contact-symbol">☎</span>
+              <span><small>Phone</small><b dir="ltr">+20 106 990 5291</b></span>
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-shabban-b28174344" target="_blank" rel="noopener noreferrer">
+              <span class="contact-symbol">in</span>
+              <span><small>LinkedIn</small><b>mohamed-shabban</b></span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <h3 data-en="Send a message" data-ar="أرسل رسالة">Send a message</h3>
+
+          <label for="senderName" data-en="Your name" data-ar="اسمك">Your name</label>
+          <input id="senderName" name="name" autocomplete="name" required placeholder="Name">
+
+          <label for="senderEmail" data-en="Your email" data-ar="بريدك الإلكتروني">Your email</label>
+          <input id="senderEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+
+          <label for="senderMessage" data-en="How can I help?" data-ar="كيف يمكنني مساعدتك؟">How can I help?</label>
+          <textarea id="senderMessage" name="message" rows="4" required placeholder="Tell me a little about your project..."></textarea>
+
+          <button class="button button-primary submit-button" type="submit"
+                  data-en="Prepare email ↗" data-ar="تجهيز الرسالة ↗">Prepare email ↗</button>
+          <p class="form-note" id="formNote"
+             data-en="This opens your email app with the message prepared."
+             data-ar="سيتم فتح تطبيق البريد لديك والرسالة مجهزة للإرسال.">
+            This opens your email app with the message prepared.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home"><span class="brand-mark">MS</span><span>Mohamed<span class="accent">.</span></span></a>
+      <p data-en="Built around clarity, curiosity, and software quality."
+         data-ar="اهتمام بالتفاصيل، وفضول، وجودة البرمجيات.">Built around clarity, curiosity, and software quality.</p>
+      <span>© <span id="year"></span> Mohamed Shabban</span>
     </div>
-  </div>
-</section>
-</main>
+  </footer>
 
-<footer class="footer">
-  <div class="container"><span>© <span id="year"></span> Mohamed Shabban </span><span data-i18n="foot"></span></div>
-</footer>
-
-<button class="to-top" id="toTop" aria-label="Top">↑</button>
-<script src="script.js"></script>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
 </html>
