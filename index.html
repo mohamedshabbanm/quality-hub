@@ -1,766 +1,457 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#12101c">
-  <meta name="description" content="Mohamed Shabban — Software Tester, Manual QA, Test Design and Defect Investigation.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamed Shabban | Software Tester &amp; QA Portfolio</title>
+  <meta name="description" content="Portfolio of Mohamed Shabban, a Software Testing Trainee focused on manual testing, API testing with Postman, test design, bug reporting and quality assurance.">
+  <meta name="author" content="Mohamed Shabban">
+  <meta name="theme-color" content="#FAF7F0">
 
-  <title>Mohamed Shabban | Software Testing Lab</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohamed Shabban | Software Tester &amp; QA Portfolio">
+  <meta property="og:description" content="Manual testing, API testing, test design and defect documentation. Software Testing Trainee at DEPI (in progress).">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231F4FE0'/%3E%3Cpath d='M9 17l5 5 9-11' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-  <div class="page-progress" id="pageProgress"></div>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="top">
-    <div class="shell top-inner">
-      <a href="#home" class="brand" aria-label="Mohamed Shabban home">
-        <span class="brand-symbol">MS/</span>
-        <span>MOHAMED <b>SHABBAN</b></span>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Mohamed Shabban, back to home">
+        <span class="brand-mark" aria-hidden="true">MS</span>
+        <span class="brand-text">Mohamed Shabban</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle"
-        aria-expanded="false" aria-controls="navigation">
-        INDEX +
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span class="menu-bars" aria-hidden="true"></span>
       </button>
 
-      <nav class="nav" id="navigation">
-        <a href="#approach">Mindset</a>
-        <a href="#lab">Investigation</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Capabilities</a>
-        <a href="#certificates">Certificates</a>
-        <a class="nav-contact" href="#contact">Contact ↗</a>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#lab">Test Lab</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm nav-cta" href="#projects">View My Work</a>
       </nav>
     </div>
   </header>
 
-  <main id="home">
+  <main id="main">
 
-    <!-- HERO -->
-    <section class="hero shell">
-      <div class="eyebrow">
-        <span class="signal"></span>
-        SOFTWARE TESTING / QUALITY INVESTIGATION
-        <span>·</span>
-        <span>PORTFOLIO 002</span>
-      </div>
-
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <p class="micro-label">THE CASE IS NEVER CLOSED TOO EARLY.</p>
-
-          <h1>
-            FOLLOW
-            <span class="line-2">THE BUG.</span>
-            <span class="line-3">FIND THE WHY.</span>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Software Testing Trainee · DEPI · In progress</p>
+          <h1 id="hero-title">
+            <span class="h1-name">Mohamed Shabban</span>
+            <span class="h1-role">Software Tester | QA Engineer</span>
           </h1>
-
-          <p class="hero-description">
-            I'm Mohamed Shabban. I investigate software behavior,
-            challenge assumptions, design test scenarios, and turn
-            unexpected results into clear, actionable evidence.
-          </p>
-
-          <div class="actions">
-            <a class="button button-primary" href="#projects">
-              Explore case files <span>↘</span>
-            </a>
-            <button class="button button-secondary" id="runHeroDemo">
-              Run test simulation <span>▷</span>
-            </button>
-          </div>
-
-          <div class="side-note">
-            <span><i></i> Manual QA</span>
-            <span><i></i> Test Design</span>
-            <span><i></i> Defect Reporting</span>
-          </div>
-
-          <div class="hero-status">
-            <span class="status-dot"></span>
-            <span>INVESTIGATION SYSTEM</span>
-            <strong id="heroSystemStatus">READY FOR INPUT</strong>
+          <p class="lede">Focused on finding defects, validating functionality, and helping deliver reliable software experiences.</p>
+          <p class="support">I am a Software Testing Trainee at the Digital Egypt Pioneers Initiative, developing practical skills in manual testing, API validation, test design, and defect documentation.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore My Work</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            <a class="text-link" href="https://www.linkedin.com/in/mohamed-shabban-b28174344/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
-        <!-- INTERACTIVE BUG SCENE -->
-        <div class="scene reveal" id="bugScene">
-          <div class="scene-halo"></div>
-
-          <div class="scene-caption">
-            CASE ROOM / 001
-            <strong>SELECT AN EVIDENCE NODE</strong>
-            Click a marker to investigate
+        <div class="pipeline" aria-labelledby="pipeline-title">
+          <div class="pipeline-head">
+            <h2 class="pipeline-title" id="pipeline-title">How a defect travels</h2>
+            <span class="tag">Interactive · illustrative</span>
           </div>
-
-          <div class="scene-crosshair" aria-hidden="true">
-            <div class="crosshair-line x"></div>
-            <div class="crosshair-line y"></div>
-          </div>
-
-          <svg class="scene-art" viewBox="0 0 520 550" aria-hidden="true">
-            <circle class="orbit" cx="260" cy="252" r="178"/>
-            <ellipse class="orbit orbit-two" cx="260" cy="252"
-              rx="133" ry="213" transform="rotate(37 260 252)"/>
-            <circle cx="260" cy="252" r="224" fill="none"
-              stroke="#76668f" stroke-width=".6" stroke-dasharray="1 11"/>
-
-            <path d="M260 57 L260 106 M260 395 L260 453 M65 252 L119 252 M400 252 L458 252"
-              stroke="#8b7aa4" stroke-width=".7" stroke-dasharray="3 5" fill="none"/>
-
-            <path class="branch branch-login" d="M115 154 L161 154 L196 193"
-              stroke="#ff6987" stroke-width="1.5" fill="none"/>
-            <circle cx="196" cy="193" r="3.5" fill="#ff6987"/>
-
-            <path class="branch branch-cart" d="M345 145 L382 145 L401 126"
-              stroke="#73eadc" stroke-width="1.5" fill="none"/>
-            <circle cx="345" cy="145" r="3.5" fill="#73eadc"/>
-
-            <path class="branch branch-mobile" d="M343 333 L386 365 L400 365"
-              stroke="#a995ff" stroke-width="1.5" fill="none"/>
-            <circle cx="343" cy="333" r="3.5" fill="#a995ff"/>
-
-            <path d="M254 72 l6 -12 l6 12 M254 447 l6 12 l6 -12"
-              stroke="#73eadc" stroke-width="1" fill="none"/>
-
-            <circle cx="260" cy="252" r="95"
-              fill="#1d182b" stroke="#4c3e5e" stroke-width="1"/>
-
-            <g stroke="#f8b5c8" stroke-width="2" fill="none" stroke-linecap="round">
-              <path d="M238 218 Q218 196 212 207"/>
-              <path d="M282 218 Q302 196 308 207"/>
-              <path d="M233 236 L214 228 L204 237"/>
-              <path d="M287 236 L306 228 L316 237"/>
-              <path d="M231 260 L212 266 L205 278"/>
-              <path d="M289 260 L308 266 L315 278"/>
-              <path d="M238 281 L221 296 L213 307"/>
-              <path d="M282 281 L299 296 L307 307"/>
-              <path d="M241 209 Q238 191 226 186"/>
-              <path d="M279 209 Q282 191 294 186"/>
-            </g>
-
-            <ellipse cx="260" cy="249" rx="24" ry="34" fill="#ff6987"/>
-            <circle cx="260" cy="214" r="17" fill="#ff95aa"/>
-            <ellipse cx="260" cy="279" rx="20" ry="14" fill="#cf4b78"/>
-            <circle cx="254" cy="211" r="2.6" fill="#20162a"/>
-            <circle cx="266" cy="211" r="2.6" fill="#20162a"/>
-            <path d="M251 222 Q260 229 269 222"
-              stroke="#20162a" stroke-width="2" fill="none"/>
-            <circle cx="260" cy="252" r="112" fill="none"
-              stroke="#ff6987" stroke-width=".7" opacity=".6"
-              stroke-dasharray="4 7"/>
-            <circle cx="260" cy="252" r="4" fill="#73eadc"/>
-          </svg>
-
-          <!-- These markers are real interactive controls -->
-          <button class="scene-node node-a" data-scene-case="login"
-            aria-label="Investigate login validation">
-            <span class="node-pulse"></span>
-            <span class="node-tooltip">01 / LOGIN VALIDATION ↗</span>
-          </button>
-
-          <button class="scene-node node-b" data-scene-case="cart"
-            aria-label="Investigate shopping cart calculations">
-            <span class="node-pulse"></span>
-            <span class="node-tooltip">02 / CART LOGIC ↗</span>
-          </button>
-
-          <button class="scene-node node-c" data-scene-case="mobile"
-            aria-label="Investigate responsive navigation">
-            <span class="node-pulse"></span>
-            <span class="node-tooltip">03 / RESPONSIVE UI ↗</span>
-          </button>
-
-          <div class="scene-tag tag-a">
-            <b>01 / SYMPTOM</b>
-            <small>Unexpected output</small>
-          </div>
-
-          <div class="scene-tag tag-b">
-            <b>02 / EVIDENCE</b>
-            <small>Steps + observations</small>
-          </div>
-
-          <div class="scene-tag tag-c">
-            <b>03 / VERDICT</b>
-            <small>Expected ≠ Actual</small>
-          </div>
-
-          <div class="scene-serial">INVESTIGATION IN PROGRESS</div>
+          <div class="stage-list" id="stageTabs" role="tablist" aria-label="Quality workflow stages"></div>
+          <div class="stage-panel" id="stagePanel" role="tabpanel" tabindex="0"></div>
         </div>
       </div>
     </section>
 
-    <!-- MOVING STRIP -->
-    <div class="scrolling-strip" aria-label="Testing principles">
-      <div class="strip-track">
-        <span>
-          Challenge the requirement <i></i>
-          Explore the edge case <i></i>
-          Reproduce the defect <i></i>
-          Report the evidence <i></i>
-          Verify the fix <i></i>
-        </span>
-        <span aria-hidden="true">
-          Challenge the requirement <i></i>
-          Explore the edge case <i></i>
-          Reproduce the defect <i></i>
-          Report the evidence <i></i>
-          Verify the fix <i></i>
-        </span>
+    <!-- ============ OVERVIEW ============ -->
+    <section class="overview" id="overview" aria-labelledby="overview-title">
+      <div class="container">
+        <h2 class="sr-only" id="overview-title">Professional focus areas</h2>
+        <ul class="focus-list">
+          <li><a href="#skills" data-skill="manual"><span class="focus-num">01</span><span class="focus-name">Manual Testing</span><span class="focus-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#skills" data-skill="api"><span class="focus-num">02</span><span class="focus-name">API Testing</span><span class="focus-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#skills" data-skill="design"><span class="focus-num">03</span><span class="focus-name">Test Design</span><span class="focus-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#bugs"><span class="focus-num">04</span><span class="focus-name">Bug Reporting</span><span class="focus-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#skills" data-skill="database"><span class="focus-num">05</span><span class="focus-name">Database Testing</span><span class="focus-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#approach"><span class="focus-num">06</span><span class="focus-name">Quality Assurance</span><span class="focus-arrow" aria-hidden="true">→</span></a></li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <!-- MINDSET -->
-    <section class="section shell" id="approach">
-      <div class="section-top reveal">
-        <div>
-          <p class="section-number">01 / THE INVESTIGATOR'S MINDSET</p>
-          <h2>TEST THE CLAIM.<br>TRACE THE <em>TRUTH.</em></h2>
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="reveal-group">
+          <p class="eyebrow">01 — About</p>
+          <h2 id="about-title">Good testing starts with a clear question.</h2>
+          <p>What should this feature do, and what happens when it does not? I enjoy answering that by understanding the expected behavior, exploring the edges, and writing down what I find so another person can reproduce it.</p>
+          <p>I am building these skills through my DEPI training and hands-on practice with sample applications. The case studies on this site are practice work, and each one is labeled that way.</p>
+          <p class="note-box"><strong>Honest scope:</strong> I am early in my career. This portfolio shows how I think, plan and document testing, not years of industry experience.</p>
         </div>
-        <p class="section-summary">
-          A feature working once is not proof that it works correctly.
-          Testing means examining behavior, conditions, and risk.
-        </p>
+
+        <div id="approach" class="approach">
+          <h3>How I Approach Testing</h3>
+          <ol class="approach-list">
+            <li><span>Understand the requirement.</span></li>
+            <li><span>Identify positive, negative, and boundary scenarios.</span></li>
+            <li><span>Design clear and reusable test cases.</span></li>
+            <li><span>Execute tests and record actual results.</span></li>
+            <li><span>Document defects with reproducible steps.</span></li>
+            <li><span>Retest fixes and perform relevant regression checks.</span></li>
+          </ol>
+        </div>
       </div>
+    </section>
 
-      <div class="intro-grid reveal">
-        <p class="pull-quote">
-          Don't trust the screen.<br>
-          <span class="accent">Question the behavior.</span>
-        </p>
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">02 — Skills Explorer</p>
+          <h2 id="skills-title">What I am learning and practicing</h2>
+          <p>Choose a category. Each label says honestly where I am with a skill. There are no percentage bars.</p>
+        </div>
+        <div class="skills-explorer">
+          <div class="skill-tabs" id="skillTabs" role="tablist" aria-label="Skill categories"></div>
+          <div class="skill-panel" id="skillPanel" role="tabpanel" tabindex="0"></div>
+        </div>
+        <p class="legend"><span class="level level--practicing">Practicing</span> used in exercises and case studies &nbsp; <span class="level level--learning">Learning</span> currently studying &nbsp; <span class="level level--working-knowledge">Working knowledge</span> understand the concepts and can apply them with guidance</p>
+      </div>
+    </section>
 
-        <div class="intro-text">
-          <p>
-            I start by understanding what a feature is supposed to do.
-            Then I explore normal use, invalid inputs, boundary values,
-            and situations that are easy to overlook.
-          </p>
-          <p>
-            When behavior looks wrong, I aim to reproduce it, compare
-            expected and actual results, and document the evidence
-            clearly enough to support investigation.
-          </p>
+    <!-- ============ TRAINING ============ -->
+    <section class="section" id="training" aria-labelledby="training-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">03 — Training</p>
+          <h2 id="training-title">Digital Egypt Pioneers Initiative</h2>
+        </div>
 
-          <div class="keyword-row">
-            <span class="keyword">OBSERVE</span>
-            <span class="keyword">QUESTION</span>
-            <span class="keyword">REPRODUCE</span>
-            <span class="keyword">DOCUMENT</span>
-            <span class="keyword">VERIFY</span>
+        <div class="training-grid">
+          <article class="training-card">
+            <span class="status-badge"><span class="live-dot" aria-hidden="true"></span>Status: In Progress</span>
+            <h3>Software Tester Track</h3>
+            <p class="training-role">Software Testing Trainee</p>
+            <p class="training-dates">July 2026 – December 2026</p>
+            <p>The program is helping me build software testing knowledge through structured learning and practical exercises, from testing fundamentals to tools, documentation and a capstone project.</p>
+            <ol class="months" id="timelineMonths" aria-label="Program months, 2026"></ol>
+          </article>
+
+          <div class="training-cols">
+            <section aria-labelledby="curr-title">
+              <h3 id="curr-title">Curriculum topics</h3>
+              <p class="col-note">What the program covers. Select a topic to see the related skills.</p>
+              <ul class="plain-list">
+                <li><a href="#skills" data-skill="fundamentals">Fundamentals of Testing (ISTQB Foundation Level concepts)</a></li>
+                <li><a href="#skills" data-skill="fundamentals">Testing Throughout the Software Development Life Cycle</a></li>
+                <li><a href="#skills" data-skill="fundamentals">Static Testing Techniques</a></li>
+                <li><a href="#skills" data-skill="design">Test Analysis and Design</a></li>
+                <li><a href="#skills" data-skill="tools">Test Tools, including Postman and Selenium</a></li>
+                <li><a href="#skills" data-skill="bugs">Test Management and Documentation</a></li>
+                <li><a href="#skills" data-skill="database">Database and Agile Fundamentals</a></li>
+                <li>Capstone Project <span class="tag tag--quiet">Part of the curriculum</span></li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="prac-title">
+              <h3 id="prac-title">Currently practicing</h3>
+              <p class="col-note">Skills I am working on in exercises.</p>
+              <ul class="plain-list">
+                <li>Writing test scenarios and test cases</li>
+                <li>Executing manual tests and recording results</li>
+                <li>Sending and validating requests in Postman</li>
+                <li>Writing SQL queries to check data</li>
+                <li>Documenting defects in a Jira-style format</li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="done-title">
+              <h3 id="done-title">Completed work</h3>
+              <p class="col-note">Kept separate on purpose.</p>
+              <ul class="plain-list">
+                <li>Practice case studies on this site, labeled as illustrative</li>
+                <li class="muted">No capstone project or production experience is claimed.</li>
+              </ul>
+            </section>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INTERACTIVE INVESTIGATION -->
-    <section class="section shell" id="lab">
-      <div class="section-top reveal">
-        <div>
-          <p class="section-number">02 / INTERACTIVE CASE FILE</p>
-          <h2>OPEN THE<br><em>EVIDENCE.</em></h2>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">04 — Projects &amp; QA Case Studies</p>
+          <h2 id="projects-title">Practice case studies</h2>
+          <p>These are demonstration case studies on fictional applications. The test data and results are illustrative. They are not client work, production deployments or real defect counts.</p>
         </div>
-        <p class="section-summary">
-          Select an incident or click one of the evidence nodes in the
-          illustration above to open the corresponding sample report.
-        </p>
+
+        <div class="filter-bar" id="projectFilters" role="group" aria-label="Filter case studies by testing type"></div>
+        <p class="sr-only" id="projectCount" role="status" aria-live="polite"></p>
+        <ol class="project-list" id="projectList"></ol>
       </div>
+    </section>
 
-      <div class="lab-console reveal">
-        <div class="console-bar">
-          <span class="console-lights"><i></i><i></i><i></i></span>
-          <span>CASE ROOM / DEMONSTRATION ENVIRONMENT</span>
-          <span>FILE TYPE: QA REPORT</span>
+    <!-- ============ TEST LAB ============ -->
+    <section class="section" id="lab" aria-labelledby="lab-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">05 — Test Lab</p>
+          <h2 id="lab-title">See how testing works</h2>
+          <p><strong>Educational demo.</strong> Everything in this lab runs in your browser against a fictional app on this page. It is not a real test automation framework, it does not test any external site or API, and nothing you type is stored or sent anywhere.</p>
         </div>
 
-        <div class="lab-layout">
-          <div class="scenario-list">
-            <p>SELECT AN INCIDENT</p>
+        <div class="lab-grid">
+          <div class="demo-app">
+            <div class="demo-chrome">
+              <span class="tag">Demo app</span>
+              <span class="demo-url" aria-hidden="true">demo-shop.invalid / sign-in</span>
+            </div>
+            <form id="demoForm" novalidate>
+              <h3>Sign in to DemoShop</h3>
+              <div class="field">
+                <label for="demoEmail">Email address</label>
+                <input id="demoEmail" name="email" type="email" autocomplete="off" spellcheck="false" aria-describedby="demoEmailErr">
+                <p class="field-error" id="demoEmailErr" hidden></p>
+              </div>
+              <div class="field">
+                <label for="demoPassword">Password</label>
+                <input id="demoPassword" name="password" type="password" autocomplete="off" aria-describedby="demoPasswordErr">
+                <p class="field-error" id="demoPasswordErr" hidden></p>
+              </div>
+              <button class="btn btn-primary" type="submit">Sign in</button>
+              <div class="demo-result" id="demoResult" role="status" aria-live="polite"></div>
+            </form>
 
-            <button class="scenario-button active" data-case="login" aria-pressed="true">
-              <small>CASE / 001</small>
-              <strong>Empty login submission</strong>
-              <span class="case-arrow">↗</span>
-            </button>
-
-            <button class="scenario-button" data-case="cart" aria-pressed="false">
-              <small>CASE / 002</small>
-              <strong>Incorrect cart total</strong>
-              <span class="case-arrow">↗</span>
-            </button>
-
-            <button class="scenario-button" data-case="mobile" aria-pressed="false">
-              <small>CASE / 003</small>
-              <strong>Mobile menu overlap</strong>
-              <span class="case-arrow">↗</span>
-            </button>
+            <div class="scenario-box">
+              <p class="scenario-title">Try a test scenario</p>
+              <div class="scenario-buttons">
+                <button class="chip" type="button" data-fill="valid">Valid inputs</button>
+                <button class="chip" type="button" data-fill="empty">Missing data</button>
+                <button class="chip" type="button" data-fill="badEmail">Invalid email</button>
+                <button class="chip" type="button" data-fill="noDomain">Email without domain</button>
+                <button class="chip" type="button" data-fill="wrongPw">Wrong password</button>
+                <button class="chip" type="button" data-fill="clear">Clear</button>
+              </div>
+              <p class="small">Demo account: <code>demo@example.test</code> / <code>Demo#2026</code>. Fictional credentials for this simulation only.</p>
+              <label class="toggle"><input type="checkbox" id="seedDefect"> Seed a demo defect: accept emails with no domain extension</label>
+            </div>
           </div>
 
-          <article class="report" aria-live="polite">
-            <div class="report-kicker">
-              <span id="reportId">BUG-001 / FUNCTIONAL</span>
-              <span>ILLUSTRATIVE REPORT</span>
-            </div>
-
-            <h3 id="reportTitle">Login form submits without required-field feedback</h3>
-
-            <div class="report-tags">
-              <span class="pill sev" id="reportSeverity">PROPOSED SEVERITY: MAJOR</span>
-              <span class="pill status-fail" id="reportStatus">FAIL</span>
-            </div>
-
-            <p class="report-description" id="reportDescription">
-              Submitting the login form while both fields are empty
-              does not provide clear field-level validation feedback.
-            </p>
-
-            <div class="report-detail">
-              <label>Steps to reproduce</label>
-              <div class="report-copy" id="reportSteps">
-                <p>1. Open the login page.</p>
-                <p>2. Leave the email and password fields empty.</p>
-                <p>3. Click the Sign in button.</p>
+          <div class="runner">
+            <div class="runner-head">
+              <h3>Test execution</h3>
+              <div class="runner-actions">
+                <button class="btn btn-primary btn-sm" type="button" id="runTests">Run simulated tests</button>
+                <button class="btn btn-ghost btn-sm" type="button" id="resetTests">Reset</button>
               </div>
             </div>
+            <p class="runner-summary" id="runSummary" role="status" aria-live="polite">Not run yet. Run the suite, then tick the seeded-defect box and run it again to see a case fail.</p>
+            <table class="run-table">
+              <caption class="sr-only">Simulated sign-in test cases and their execution status</caption>
+              <thead><tr><th scope="col">ID</th><th scope="col">Test case</th><th scope="col">Status</th></tr></thead>
+              <tbody id="runBody"></tbody>
+            </table>
+          </div>
+        </div>
 
-            <div class="report-columns">
-              <div class="report-detail expected">
-                <label>Expected result</label>
-                <p id="reportExpected">
-                  Required-field validation is displayed, and invalid data is not submitted.
-                </p>
+        <!-- Bug reports -->
+        <div class="subsection" id="bugs" aria-labelledby="bugs-title">
+          <div class="sub-head">
+            <h3 id="bugs-title">Bug report showcase</h3>
+            <p>Illustrative portfolio examples on fictional applications. Select a report, then copy it as plain text.</p>
+          </div>
+          <div class="bug-layout">
+            <div class="bug-tabs" id="bugTabs" role="tablist" aria-label="Sample bug reports"></div>
+            <div class="bug-main">
+              <div class="bug-toolbar">
+                <span class="tag">Illustrative example</span>
+                <button class="btn btn-ghost btn-sm" type="button" id="copyBug">Copy Bug Report</button>
               </div>
-              <div class="report-detail actual">
-                <label>Actual result</label>
-                <p id="reportActual">
-                  No clear validation message appears after submission.
-                </p>
-              </div>
+              <article class="bug-view" id="bugPanel" role="tabpanel" tabindex="0"></article>
             </div>
+          </div>
+        </div>
 
-            <div class="report-meta">
-              <div class="meta-item">
-                <small>AREA</small>
-                <span id="reportArea">Authentication / Login</span>
-              </div>
-              <div class="meta-item">
-                <small>USER IMPACT</small>
-                <span id="reportImpact">Unclear recovery from input errors</span>
-              </div>
+        <!-- Test documentation -->
+        <div class="subsection" id="testcases" aria-labelledby="tc-title">
+          <div class="sub-head">
+            <h3 id="tc-title">Test documentation preview</h3>
+            <p>Sample test cases with illustrative statuses. Search, filter, and open any case for full details.</p>
+          </div>
+          <div class="toolbar">
+            <div class="tool">
+              <label for="tcSearch">Search</label>
+              <input id="tcSearch" type="search" placeholder="ID, scenario, step…" autocomplete="off">
             </div>
-
-            <button class="text-action" id="copyReport">
-              COPY REPORT SUMMARY <span>⧉</span>
-            </button>
-            <p class="copy-feedback" id="copyFeedback" aria-live="polite"></p>
-          </article>
-        </div>
-
-        <div class="demo-disclaimer">
-          THESE ARE PORTFOLIO DEMONSTRATIONS, NOT CLAIMED BUGS IN A VERIFIED CLIENT APPLICATION.
-        </div>
-      </div>
-    </section>
-
-    <!-- LIVE TEST CONSOLE -->
-    <section class="section console-section">
-      <div class="section-top reveal">
-        <div>
-          <p class="section-number">03 / LIVE TEST RUN</p>
-          <h2>LET THE TESTS<br><em>DO THE TALKING.</em></h2>
-        </div>
-        <p class="section-summary">
-          Start a simulated run to see test cases execute, results
-          appear, and the run summary update in real time.
-        </p>
-      </div>
-
-      <div class="test-console reveal">
-        <div class="test-console-header">
-          <div>
-            <span class="console-label">EXECUTION TERMINAL</span>
-            <h3>Smoke Test / Demo Build 1.0</h3>
-          </div>
-          <span class="run-indicator" id="runIndicator">● IDLE</span>
-        </div>
-
-        <div class="test-stats">
-          <div class="stat-box">
-            <small>TOTAL</small>
-            <strong id="totalCount">5</strong>
-          </div>
-          <div class="stat-box pass-stat">
-            <small>PASS</small>
-            <strong id="passCount">0</strong>
-          </div>
-          <div class="stat-box fail-stat">
-            <small>FAIL</small>
-            <strong id="failCount">0</strong>
-          </div>
-          <div class="stat-box block-stat">
-            <small>BLOCKED</small>
-            <strong id="blockedCount">0</strong>
-          </div>
-        </div>
-
-        <div class="progress-track">
-          <div class="progress-fill" id="runProgress"></div>
-        </div>
-
-        <div class="test-list" id="testList">
-          <div class="test-row" data-test="0">
-            <span class="test-number">TC-001</span>
-            <span class="test-name">Login with valid credentials</span>
-            <span class="test-result pending">PENDING</span>
-          </div>
-          <div class="test-row" data-test="1">
-            <span class="test-number">TC-002</span>
-            <span class="test-name">Required-field validation</span>
-            <span class="test-result pending">PENDING</span>
-          </div>
-          <div class="test-row" data-test="2">
-            <span class="test-number">TC-003</span>
-            <span class="test-name">Cart total recalculation</span>
-            <span class="test-result pending">PENDING</span>
-          </div>
-          <div class="test-row" data-test="3">
-            <span class="test-number">TC-004</span>
-            <span class="test-name">Responsive navigation visibility</span>
-            <span class="test-result pending">PENDING</span>
-          </div>
-          <div class="test-row" data-test="4">
-            <span class="test-number">TC-005</span>
-            <span class="test-name">Checkout with missing address</span>
-            <span class="test-result pending">PENDING</span>
-          </div>
-        </div>
-
-        <div class="console-bottom">
-          <span id="runMessage" aria-live="polite">Ready. This is a simulated test run.</span>
-          <button class="button button-primary" id="runTests">
-            <span id="runButtonLabel">RUN TEST SUITE ▷</span>
-          </button>
-        </div>
-
-        <p class="demo-disclaimer">
-          SIMULATED RESULTS FOR UI DEMONSTRATION ONLY. NO APPLICATION OR API IS BEING TESTED.
-        </p>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section shell" id="projects">
-      <div class="section-top reveal">
-        <div>
-          <p class="section-number">04 / SELECTED WORK</p>
-          <h2>PROJECTS ARE<br><em>EVIDENCE.</em></h2>
-        </div>
-        <p class="section-summary">
-          Open a case file to inspect its scope, approach, sample
-          scenarios, and expected deliverables.
-        </p>
-      </div>
-
-      <div class="project-grid" id="projectGrid">
-        <button class="project-card reveal" data-project="web" aria-haspopup="dialog">
-          <span class="project-topline">
-            <span>PROJECT / 001</span><span class="project-open">↗</span>
-          </span>
-          <span class="project-icon">⌘</span>
-          <span class="project-title">Web Application Testing</span>
-          <span class="project-description">
-            Functional behavior, forms, validation, navigation, and
-            negative test scenarios.
-          </span>
-          <span class="project-tags">
-            <i>Manual QA</i><i>Test Cases</i><i>Bug Reports</i>
-          </span>
-          <span class="project-footer">OPEN CASE FILE <b>↗</b></span>
-        </button>
-
-        <button class="project-card reveal" data-project="checkout" aria-haspopup="dialog">
-          <span class="project-topline">
-            <span>PROJECT / 002</span><span class="project-open">↗</span>
-          </span>
-          <span class="project-icon">▤</span>
-          <span class="project-title">Checkout &amp; Payment Scenarios</span>
-          <span class="project-description">
-            Input boundaries, expiry-date rules, required fields,
-            payment paths, and error handling.
-          </span>
-          <span class="project-tags">
-            <i>Boundary Tests</i><i>Negative Tests</i>
-          </span>
-          <span class="project-footer">OPEN CASE FILE <b>↗</b></span>
-        </button>
-
-        <button class="project-card reveal" data-project="regression" aria-haspopup="dialog">
-          <span class="project-topline">
-            <span>PROJECT / 003</span><span class="project-open">↗</span>
-          </span>
-          <span class="project-icon">⟳</span>
-          <span class="project-title">Regression Test Pack</span>
-          <span class="project-description">
-            Critical user journeys, retesting, smoke checks, and
-            structured execution results.
-          </span>
-          <span class="project-tags">
-            <i>Regression</i><i>Smoke Tests</i>
-          </span>
-          <span class="project-footer">OPEN CASE FILE <b>↗</b></span>
-        </button>
-      </div>
-
-      <p class="section-footnote">
-        PROJECT TEMPLATES / REPLACE WITH YOUR OWN COMPLETED WORK AND VERIFIED RESULTS.
-      </p>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section shell" id="skills">
-      <div class="section-top reveal">
-        <div>
-          <p class="section-number">05 / TESTING CAPABILITIES</p>
-          <h2>FROM TEST IDEA<br>TO <em>USEFUL EVIDENCE.</em></h2>
-        </div>
-        <p class="section-summary">
-          Practical testing activities that can be adapted to the
-          client's application, requirements, and agreed scope.
-        </p>
-      </div>
-
-      <div class="skills-map">
-        <article class="skill-feature primary reveal">
-          <span class="index">CAPABILITY / 01</span>
-          <h3>Manual &amp; Functional Testing</h3>
-          <p>
-            Verify application behavior against requirements, exercise
-            key user journeys, and identify differences between
-            expected and actual results.
-          </p>
-          <span class="skill-watermark">QA</span>
-        </article>
-
-        <div class="skill-stack">
-          <article class="skill-mini reveal">
-            <span class="mini-no">02</span>
-            <div>
-              <h3>Test Case Design</h3>
-              <p>Positive, negative, boundary, and validation scenarios.</p>
+            <div class="tool">
+              <label for="tcStatus">Status</label>
+              <select id="tcStatus">
+                <option value="">All statuses</option>
+                <option>Pass</option>
+                <option>Fail</option>
+                <option>Blocked</option>
+                <option>Not Run</option>
+              </select>
             </div>
-          </article>
-          <article class="skill-mini reveal">
-            <span class="mini-no">03</span>
-            <div>
-              <h3>Bug Reporting</h3>
-              <p>Reproduction steps, expected and actual results, evidence.</p>
+            <div class="tool">
+              <label for="tcCategory">Category</label>
+              <select id="tcCategory"><option value="">All categories</option></select>
             </div>
-          </article>
-          <article class="skill-mini reveal">
-            <span class="mini-no">04</span>
-            <div>
-              <h3>Regression &amp; Smoke Testing</h3>
-              <p>Retest changes and verify critical application paths.</p>
-            </div>
-          </article>
-          <article class="skill-mini reveal">
-            <span class="mini-no">05</span>
-            <div>
-              <h3>Exploratory Testing</h3>
-              <p>Investigate unexpected behavior and edge cases.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="tools-line reveal">
-        <span>TECHNIQUES</span>
-        <span class="tool">Exploratory Testing</span>
-        <span class="tool">Boundary Testing</span>
-        <span class="tool">Negative Testing</span>
-        <span class="tool">UI Validation</span>
-        <span class="tool">Retesting</span>
-        <span class="tool">Cross-Browser Checks</span>
-      </div>
-    </section>
-
-    <!-- CERTIFICATES -->
-    <section class="section certificates-section" id="certificates">
-      <div class="shell">
-        <div class="section-top reveal">
-          <div>
-            <p class="section-number">06 / CREDENTIAL VAULT</p>
-            <h2>PROOF OF<br><em>PROGRESS.</em></h2>
           </div>
-          <p class="section-summary">
-            A growing archive of completed courses and certifications.
-            Each credential can include its issuer, completion date,
-            verification link, and certificate image.
-          </p>
-        </div>
-
-        <div class="vault-toolbar reveal">
-          <div class="vault-tabs" role="group" aria-label="Filter certificates">
-            <button class="vault-tab active" data-cert-filter="all">ALL RECORDS</button>
-            <button class="vault-tab" data-cert-filter="earned">COMPLETED</button>
-            <button class="vault-tab" data-cert-filter="planned">IN PROGRESS / PLANNED</button>
+          <p class="count" id="tcCount" role="status" aria-live="polite"></p>
+          <div class="table-wrap">
+            <table class="tc-table" role="table">
+              <caption class="sr-only">Sample test cases</caption>
+              <thead role="rowgroup">
+                <tr role="row">
+                  <th role="columnheader" scope="col">Test Case ID</th>
+                  <th role="columnheader" scope="col">Test Scenario</th>
+                  <th role="columnheader" scope="col">Preconditions</th>
+                  <th role="columnheader" scope="col">Steps</th>
+                  <th role="columnheader" scope="col">Expected Result</th>
+                  <th role="columnheader" scope="col">Priority</th>
+                  <th role="columnheader" scope="col">Execution Status</th>
+                </tr>
+              </thead>
+              <tbody id="tcBody" role="rowgroup"></tbody>
+            </table>
           </div>
-          <span class="vault-counter" id="vaultCounter">0 RECORDS</span>
-        </div>
-
-        <div class="certificate-grid" id="certificateGrid">
-          <!-- Generated from the certificates array in script.js -->
-        </div>
-
-        <p class="section-footnote">
-          ONLY MARK A CREDENTIAL AS COMPLETED AFTER YOU HAVE EARNED IT.
-        </p>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section shell" id="process">
-      <div class="section-top reveal">
-        <div>
-          <p class="section-number">07 / WORKFLOW</p>
-          <h2>A TRACEABLE<br>TESTING <em>PROCESS.</em></h2>
-        </div>
-        <p class="section-summary">
-          A structured workflow makes the scope, execution results,
-          and outstanding findings easier to review.
-        </p>
-      </div>
-
-      <div class="workflow reveal">
-        <article class="workflow-step">
-          <span class="step-pin"></span>
-          <div><small>STAGE / 01</small><h3>Understand</h3></div>
-          <p>Review requirements, access, scope, and acceptance criteria.</p>
-        </article>
-        <article class="workflow-step">
-          <span class="step-pin"></span>
-          <div><small>STAGE / 02</small><h3>Design</h3></div>
-          <p>Prepare scenarios and prioritize areas according to risk.</p>
-        </article>
-        <article class="workflow-step">
-          <span class="step-pin"></span>
-          <div><small>STAGE / 03</small><h3>Execute</h3></div>
-          <p>Perform the agreed tests and capture useful evidence.</p>
-        </article>
-        <article class="workflow-step">
-          <span class="step-pin"></span>
-          <div><small>STAGE / 04</small><h3>Report</h3></div>
-          <p>Document results, reproducible defects, and key findings.</p>
-        </article>
-        <article class="workflow-step">
-          <span class="step-pin"></span>
-          <div><small>STAGE / 05</small><h3>Verify</h3></div>
-          <p>Retest fixes and run agreed regression checks.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact-section shell" id="contact">
-      <div class="contact-art reveal">
-        <p class="section-number">08 / START AN INVESTIGATION</p>
-        <h2>LET'S FIND<br>WHAT <span>OTHERS MISS.</span></h2>
-        <p>
-          Have an application that needs testing? Share the scope,
-          important user journeys, and what needs to be verified.
-          Let's agree on an approach and clear deliverables.
-        </p>
-
-        <div class="actions">
-          <a class="button button-primary"
-             href="mailto:mohamedworkoff@gmail.com?subject=Software%20Testing%20Inquiry">
-            Discuss a testing project ↗
-          </a>
-          <a class="button button-secondary"
-             href="https://www.linkedin.com/in/mohamed-shabban-b28174344/"
-             target="_blank" rel="noopener noreferrer">
-            Connect on LinkedIn ↗
-          </a>
-        </div>
-
-        <div class="contact-links">
-          <a href="mailto:mohamedworkoff@gmail.com">mohamedworkoff@gmail.com</a>
-          <a href="tel:+201069905291">+20 106 990 5291</a>
-          <a href="https://www.linkedin.com/in/mohamed-shabban-b28174344/"
-             target="_blank" rel="noopener noreferrer">LINKEDIN PROFILE ↗</a>
-          <a href="CV.pdf" target="_blank">VIEW CV ↗</a>
+          <p class="empty" id="tcEmpty" hidden>No test cases match your search and filters.</p>
         </div>
       </div>
     </section>
 
+    <!-- ============ CERTIFICATES / LEARNING ============ -->
+    <section class="section section-alt" id="certificates" aria-labelledby="learning-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">06 — Certificates &amp; Learning</p>
+          <h2 id="learning-title">Learning &amp; Professional Development</h2>
+        </div>
+        <div class="learning-grid">
+          <ul class="learning-list">
+            <li><span class="tag tag--quiet">Studying</span><div><strong>ISTQB Foundation Level syllabus</strong><p>Testing fundamentals, testing throughout the lifecycle, static testing, test analysis and design, and test management.</p></div></li>
+            <li><span class="tag tag--quiet">In progress</span><div><strong>Software Testing and QA learning</strong><p>Through the DEPI Software Tester track, July – December 2026.</p></div></li>
+            <li><span class="tag tag--quiet">Practicing</span><div><strong>API testing with Postman</strong><p>Requests, status codes, JSON validation and basic assertions.</p></div></li>
+            <li><span class="tag tag--quiet">Ongoing</span><div><strong>Testing documentation and practical projects</strong><p>Test cases, bug reports and case studies that I keep improving.</p></div></li>
+          </ul>
+          <aside class="note-box credentials-box">
+            <h3>Credentials</h3>
+            <p>No certificates are listed yet. I am studying the ISTQB Foundation Level syllabus, but I do not hold an ISTQB certification.</p>
+            <p>Verified credentials will be added here with their verification details once I have them.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">07 — Contact</p>
+          <h2 id="contact-title">Let's talk about quality</h2>
+          <p>I am open to conversations about software testing and QA opportunities, including internships, junior roles and freelance work.</p>
+        </div>
+        <div class="contact-grid">
+          <ul class="contact-list">
+            <li><span class="contact-label">Email</span><a href="mailto:mohamedworkoff@gmail.com">mohamedworkoff@gmail.com</a><button class="btn btn-ghost btn-sm" type="button" id="copyEmail">Copy Email</button></li>
+            <li><span class="contact-label">Phone</span><a href="tel:+201069905291">+20 106 990 5291</a></li>
+            <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/mohamed-shabban-b28174344/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohamed-shabban-b28174344<span class="sr-only"> (opens in a new tab)</span></a></li>
+            <li><span class="contact-label">GitHub</span><a href="https://github.com/MohamedSM" target="_blank" rel="noopener noreferrer">github.com/MohamedSM<span class="sr-only"> (opens in a new tab)</span></a></li>
+            <li><span class="contact-label">Location</span><span>Egypt</span></li>
+          </ul>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Write an email</h3>
+            <p class="small">This form has no backend. Submitting it opens your email app with the message prepared. Nothing is sent from this page.</p>
+            <div class="field">
+              <label for="cfName">Your name</label>
+              <input id="cfName" type="text" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="cfSubject">Subject</label>
+              <input id="cfSubject" type="text" value="Hello from your portfolio">
+            </div>
+            <div class="field">
+              <label for="cfMessage">Message</label>
+              <textarea id="cfMessage" rows="5" aria-describedby="cfStatus"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Open in my email app</button>
+            <p class="form-status" id="cfStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="shell footer">
-    <span>MOHAMED SHABBAN <b>/</b> SOFTWARE TESTING</span>
-    <span>EVIDENCE OVER ASSUMPTIONS.</span>
-    <span id="year">© 2026</span>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Mohamed Shabban</p>
+        <p class="footer-focus">Software Testing &amp; Quality Assurance</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#lab">Test Lab</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-links footer-contact">
+        <li><a href="mailto:mohamedworkoff@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/mohamed-shabban-b28174344/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="https://github.com/MohamedSM" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Mohamed Shabban. All sample data on this site is illustrative.</p>
+    </div>
   </footer>
 
-  <!-- PROJECT DETAILS MODAL -->
-  <dialog class="detail-dialog" id="projectDialog" aria-labelledby="dialogTitle">
-    <div class="dialog-top">
-      <span id="dialogCaseId">PROJECT / 001</span>
-      <button class="dialog-close" data-close-dialog aria-label="Close project details">✕</button>
-    </div>
-    <div class="dialog-content">
-      <p class="section-number">CASE FILE / PROJECT DETAILS</p>
-      <h2 id="dialogTitle">Project title</h2>
-      <p class="dialog-summary" id="dialogSummary"></p>
-
-      <div class="dialog-block">
-        <h3>Scope of investigation</h3>
-        <ul id="dialogScope"></ul>
+  <!-- ============ TEST CASE DIALOG ============ -->
+  <dialog id="tcDialog" aria-labelledby="tcDialogTitle">
+    <div class="dialog-inner">
+      <div class="dialog-head">
+        <h3 id="tcDialogTitle">Test case</h3>
+        <button class="icon-btn" type="button" id="tcClose" aria-label="Close test case details">✕</button>
       </div>
-
-      <div class="dialog-block">
-        <h3>Sample test scenarios</h3>
-        <ul id="dialogScenarios"></ul>
+      <div id="tcDialogBody"></div>
+      <div class="dialog-actions">
+        <button class="btn btn-ghost btn-sm" type="button" id="tcCopy">Copy test case</button>
+        <button class="btn btn-primary btn-sm" type="button" id="tcClose2">Close</button>
       </div>
-
-      <div class="dialog-block">
-        <h3>Expected deliverables</h3>
-        <ul id="dialogDeliverables"></ul>
-      </div>
-
-      <p class="dialog-note" id="dialogNote"></p>
-    </div>
-  </dialog>
-
-  <!-- CERTIFICATE PREVIEW MODAL -->
-  <dialog class="detail-dialog certificate-dialog" id="certificateDialog"
-    aria-labelledby="certificateDialogTitle">
-    <div class="dialog-top">
-      <span>CREDENTIAL / PREVIEW</span>
-      <button class="dialog-close" data-close-dialog aria-label="Close certificate preview">✕</button>
-    </div>
-    <div class="dialog-content">
-      <p class="section-number">CERTIFICATE VAULT</p>
-      <h2 id="certificateDialogTitle">Certificate title</h2>
-      <p class="dialog-summary" id="certificateDialogMeta"></p>
-      <div class="certificate-preview" id="certificatePreview"></div>
-      <p class="dialog-note" id="certificateDialogNote"></p>
-      <a class="button button-primary certificate-verify" id="certificateVerify"
-        href="#" target="_blank" rel="noopener noreferrer">
-        VIEW VERIFICATION ↗
-      </a>
     </div>
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>↑</button>
 </body>
 </html>
